@@ -9,7 +9,7 @@ if(request.url==='/')
 {
     const data=fs.readFileSync('./todo.json')
     //data=JSON.parse(data);
-    response.write(data);
+    response.write(data); 
     response.end();
 }
 else if(request.url==='/delete?id=1')
